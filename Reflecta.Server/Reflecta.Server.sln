@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflecta.Server", "Reflecta.Server\Reflecta.Server.csproj", "{2798AB54-8F3D-4904-9676-D32BBE6F8E60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflecta.Server.UI", "Reflecta.Server.UI\Reflecta.Server.UI.csproj", "{4663DF0F-41F2-48EE-9BDA-61C326FE625D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflecta", "Reflecta\Reflecta.csproj", "{2D23912D-ED27-4FBB-96BE-343C40F9F4D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2798AB54-8F3D-4904-9676-D32BBE6F8E60}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{2798AB54-8F3D-4904-9676-D32BBE6F8E60}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{2798AB54-8F3D-4904-9676-D32BBE6F8E60}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{2798AB54-8F3D-4904-9676-D32BBE6F8E60}.Debug|x64.ActiveCfg = Debug|x64
+		{2798AB54-8F3D-4904-9676-D32BBE6F8E60}.Debug|x64.Build.0 = Debug|x64
+		{2798AB54-8F3D-4904-9676-D32BBE6F8E60}.Release|Any CPU.ActiveCfg = Release|x64
+		{2798AB54-8F3D-4904-9676-D32BBE6F8E60}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{2798AB54-8F3D-4904-9676-D32BBE6F8E60}.Release|Mixed Platforms.Build.0 = Release|x64
+		{2798AB54-8F3D-4904-9676-D32BBE6F8E60}.Release|x64.ActiveCfg = Release|x64
+		{2798AB54-8F3D-4904-9676-D32BBE6F8E60}.Release|x64.Build.0 = Release|x64
+		{4663DF0F-41F2-48EE-9BDA-61C326FE625D}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{4663DF0F-41F2-48EE-9BDA-61C326FE625D}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{4663DF0F-41F2-48EE-9BDA-61C326FE625D}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{4663DF0F-41F2-48EE-9BDA-61C326FE625D}.Debug|x64.ActiveCfg = Debug|x64
+		{4663DF0F-41F2-48EE-9BDA-61C326FE625D}.Debug|x64.Build.0 = Debug|x64
+		{4663DF0F-41F2-48EE-9BDA-61C326FE625D}.Release|Any CPU.ActiveCfg = Release|x64
+		{4663DF0F-41F2-48EE-9BDA-61C326FE625D}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{4663DF0F-41F2-48EE-9BDA-61C326FE625D}.Release|Mixed Platforms.Build.0 = Release|x64
+		{4663DF0F-41F2-48EE-9BDA-61C326FE625D}.Release|x64.ActiveCfg = Release|x64
+		{4663DF0F-41F2-48EE-9BDA-61C326FE625D}.Release|x64.Build.0 = Release|x64
+		{2D23912D-ED27-4FBB-96BE-343C40F9F4D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D23912D-ED27-4FBB-96BE-343C40F9F4D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D23912D-ED27-4FBB-96BE-343C40F9F4D2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2D23912D-ED27-4FBB-96BE-343C40F9F4D2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2D23912D-ED27-4FBB-96BE-343C40F9F4D2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2D23912D-ED27-4FBB-96BE-343C40F9F4D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D23912D-ED27-4FBB-96BE-343C40F9F4D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D23912D-ED27-4FBB-96BE-343C40F9F4D2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2D23912D-ED27-4FBB-96BE-343C40F9F4D2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2D23912D-ED27-4FBB-96BE-343C40F9F4D2}.Release|x64.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

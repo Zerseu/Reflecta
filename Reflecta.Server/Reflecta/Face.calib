@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+
+<MoCapFacialExpressionCalibration xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Calibration>
+
+    <!--JawOpen-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>0.00</WeightMin>
+      <WeightMax>0.40</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--LipPucker-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>0.00</WeightMin>
+      <WeightMax>0.80</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--JawSlideRight-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>-0.25</WeightMin>
+      <WeightMax>0.25</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--LipStretcherRight-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>0.00</WeightMin>
+      <WeightMax>0.80</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--LipStretcherLeft-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>0.00</WeightMin>
+      <WeightMax>0.80</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--LipCornerPullerLeft-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>0.00</WeightMin>
+      <WeightMax>0.95</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--LipCornerPullerRight-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>0.00</WeightMin>
+      <WeightMax>0.95</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--LipCornerDepressorLeft-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>0.00</WeightMin>
+      <WeightMax>0.75</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--LipCornerDepressorRight-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>0.00</WeightMin>
+      <WeightMax>0.75</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--LeftcheekPuff-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>0.00</WeightMin>
+      <WeightMax>0.75</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--RightcheekPuff-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>0.00</WeightMin>
+      <WeightMax>0.75</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--LefteyeClosed-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>0.00</WeightMin>
+      <WeightMax>0.95</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--RighteyeClosed-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>0.00</WeightMin>
+      <WeightMax>0.95</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--RighteyebrowLowerer-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>-0.60</WeightMin>
+      <WeightMax>0.50</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--LefteyebrowLowerer-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>-0.60</WeightMin>
+      <WeightMax>0.50</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--LowerlipDepressorLeft-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>0.00</WeightMin>
+      <WeightMax>0.80</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+    <!--LowerlipDepressorRight-->
+    <MoCapFacialExpressionCalibrationUnit>
+      <WeightMin>0.00</WeightMin>
+      <WeightMax>0.80</WeightMax>
+    </MoCapFacialExpressionCalibrationUnit>
+
+  </Calibration>
+</MoCapFacialExpressionCalibration>

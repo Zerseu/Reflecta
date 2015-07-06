@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D23912D-ED27-4FBB-96BE-343C40F9F4D2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Reflecta</RootNamespace>
+    <AssemblyName>Reflecta</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Reflecta.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="protobuf-net">
+      <HintPath>..\packages\protobuf-net.2.0.0.668\lib\net20\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bones\MoCapBoneConstraint.cs" />
+    <Compile Include="Bones\MoCapBoneConstraintUnit.cs" />
+    <Compile Include="DESP\DESPFloat.cs" />
+    <Compile Include="DESP\DESPVector3.cs" />
+    <Compile Include="Pipeline\CommandMessage.cs" />
+    <Compile Include="Pipeline\CommandType.cs" />
+    <Compile Include="Pipeline\Constants.cs" />
+    <Compile Include="DESP\DESPQuaternion.cs" />
+    <Compile Include="DESP\DESPQuaternionParameters.cs" />
+    <Compile Include="Pipeline\Key.cs" />
+    <Compile Include="Basic\MathHelper.cs" />
+    <Compile Include="Bones\MoCapBodyFrame.cs" />
+    <Compile Include="Bones\MoCapBoneCalibration.cs" />
+    <Compile Include="Bones\MoCapBoneCalibrationUnit.cs" />
+    <Compile Include="Bones\MoCapBoneMapper.cs" />
+    <Compile Include="Pipeline\MoCapData.cs" />
+    <Compile Include="Expressions\MoCapFaceFrame.cs" />
+    <Compile Include="Expressions\MoCapFacialExpressionCalibration.cs" />
+    <Compile Include="Expressions\MoCapFacialExpressionCalibrationUnit.cs" />
+    <Compile Include="Expressions\MoCapFacialExpressionMapper.cs" />
+    <Compile Include="Bones\MoCapKinectBone.cs" />
+    <Compile Include="Bones\MoCapKinectBoneHierarchyNode.cs" />
+    <Compile Include="Expressions\MoCapKinectFacialExpression.cs" />
+    <Compile Include="Bones\MoCapMecanimBone.cs" />
+    <Compile Include="Expressions\MoCapMixamoFacialExpression.cs" />
+    <Compile Include="Basic\Quaternion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Basic\TransformTime.cs" />
+    <Compile Include="Basic\Vector3.cs" />
+    <Compile Include="Expressions\Viseme.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Face.calib">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(TargetDir)$(ProjectName).dll" "$(SolutionDir)..\Reflecta.Client\Assets\Plugins\$(ProjectName).dll"
+copy /Y "$(TargetDir)Face.calib" "$(SolutionDir)..\Reflecta.Client\Face.calib"
+copy /Y "$(TargetDir)Face.calib" "$(SolutionDir)..\Reflecta.Client\bin\Face.calib"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
